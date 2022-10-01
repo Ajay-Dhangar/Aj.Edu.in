@@ -25,6 +25,11 @@ p {
     line-height: 1.2;
 }
 
+article p {
+    font-size: 35px;
+    padding: 20px;
+}
+
 
 /* ================  Navbar =================== */
 
@@ -95,21 +100,26 @@ nav ul {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
 
+.imgIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15), 2px 2px 17px 2px rgba(0, 0, 0, .1);
+}
+
 button {
     font-size: 32px;
     font-weight: 700;
-    text-align: center;
     color: #fff;
     background-color: #0069ff;
     padding: 15px 60px;
     display: block;
+    text-align: center;
     margin: 5px;
     border-radius: 7px;
 }
 
-button.learnMore {
+.learnMore {
     display: block;
-    margin: auto;
 }
 
 .icon {
@@ -193,6 +203,10 @@ h1.section2header {
     margin-left: 30%;
 }
 
+.rightside-col {
+    margin-left: 15%;
+}
+
 form h2 {
     color: #fff;
 }
@@ -203,6 +217,28 @@ input[type="password"] {
     width: 300px;
     min-width: 100px;
     padding: 5px;
+}
+
+footer.footsy {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.footsy h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
 }
 
 
@@ -232,14 +268,29 @@ input[type="password"] {
         display: block;
         text-align: left;
     }
+    h1.section2header {
+        font-size: 50px;
+    }
+    .col-7,
     .col-6,
+    .col-5,
     .col-4 {
         width: 100%;
         margin: 0;
     }
+    div.mstack {
+        width: 50%;
+        display: block;
+    }
     .box {
         padding: 5px;
         display: block;
+    }
+    .imgIcon {
+        margin: 10px;
+    }
+    .imgIcon img {
+        width: 100%;
     }
     .leftside-col,
     .rightside-col {
