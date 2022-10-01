@@ -1,0 +1,258 @@
+/*=========== Defaults ============*/
+
+* {
+    box-sizing: border-box;
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+
+/* ================  Navbar =================== */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    list-style: none;
+    float: left;
+}
+
+.topnav li.topnav-right {
+    float: right;
+}
+
+.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.topnav li a:hover {
+    background-color: #0080ff;
+    color: #eee;
+}
+
+.topnav .dropdownIcon {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+/*  =============== Custom Style  ============== */
+
+#section-1-gradient {
+    background: #076dff;
+    background: -webkit-linear-gradient(#076dff, #65a5ff);
+    background: -o-linear-gradient(#076dff, #65a5ff);
+    background: -moz-linear-gradient(#076dff, #65a5ff);
+    background: linear-gradient(#076dff, #65a5ff);
+}
+
+.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+}
+
+.icon {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+h1.large {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.section2header {
+    font-size: 65px;
+    text-align: center;
+}
+
+.leftside-col {
+    margin-left: 30%;
+}
+
+form h2 {
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    width: 300px;
+    min-width: 100px;
+    padding: 5px;
+}
+
+
+/*  ====== Mobile ======*/
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    .col-6,
+    .col-4 {
+        width: 100%;
+        margin: 0;
+    }
+    .box {
+        padding: 5px;
+        display: block;
+    }
+    .leftside-col,
+    .rightside-col {
+        margin: 15px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 350px;
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
